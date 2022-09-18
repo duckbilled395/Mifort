@@ -1,0 +1,94 @@
+.profitTargetBox {
+  width: 280px;
+  height: 52.5px;
+  margin: 8px auto 0;
+  border-bottom: 1px solid #393644;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+@mixin profitTargetItem {
+  height: 100%;
+  color: #ffffff;
+}
+
+.price {
+  @include profitTargetItem;
+  width: 35px;
+}
+
+.targetPrice {
+  @include profitTargetItem;
+  width: 88px;
+}
+
+.amount {
+  @include profitTargetItem;
+  width: 77px;
+}
+
+.root {
+  background-color: #231f30;
+  color: #fff;
+}
+
+.inputLabel {
+  color: rgba(255, 255, 255, 0.5) !important;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.input {
+  color: #fff;
+}
+
+.inputWrapper {
+  font-size: 15px;
+  border-radius: 0;
+  border: 1px solid transparent;
+  //color: #ffffff !important;
+  background-color: #231f30;
+  padding-top: 6px;
+
+  &:hover {
+    //background-color: rgba(255, 255, 255, 0.03);
+  }
+
+  &.focused:not(input) {
+    //background-color: rgba(255, 255, 255, 0.09) !important;
+  }
+
+  &.adornedEnd {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  &.adornedStart {
+    padding-left: 9px;
+  }
+
+  &.error {
+    border-color: #ff4114;
+  }
+}
+
+.closeIconBox {
+  width: 16px;
+  height: 16px;
+  margin: 0 10px 10px 0
+}
+
+.closeIconBtn {
+  width: 16px;
+  height: 16px;
+}
+
+.closeIcon {
+  width: 16px !important;
+  height: 16px !important;
+  color: #393644;
+
+}
