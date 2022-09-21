@@ -1,0 +1,114 @@
+.profitTargetBox {
+  width: 280px;
+  height: 53.5px;
+  margin: 8px auto 0;
+  border-bottom: 1px solid #393644;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  font-family: 'SF Pro Display', sans-serif;
+}
+
+.profitTargetBoxInner {
+  width: 265px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+@mixin profitTargetItem {
+  height: 100%;
+  color: #ffffff;
+}
+
+.price {
+  @include profitTargetItem;
+  width: 35px;
+}
+
+.targetPrice {
+  @include profitTargetItem;
+  width: 88px;
+}
+
+.amount {
+  @include profitTargetItem;
+  width: 53px;
+  margin-right: 12px;
+}
+
+.root {
+  background-color: #231f30;
+  color: #fff;
+  font-size: 12px;
+  font-family: 'SF Pro Display', sans-serif;
+
+  .inputLabel {
+    color: rgba(255, 255, 255, 0.5) !important;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.25px;
+    white-space: nowrap;
+  }
+
+  .input {
+    color: #fff;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.25px;
+    padding: 6px 0 6px;
+  }
+
+  .inputWrapper {
+    border-radius: 0;
+    border: 1px solid transparent;
+    background-color: #231f30;
+    padding-top: 6px;
+
+    &:hover {
+
+    }
+
+    &.focused:not(input) {
+
+    }
+
+    &.adornedEnd {
+      font-size: 12px;
+      line-height: 14px;
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    &.adornedStart {
+      padding-left: 9px;
+    }
+
+    &.error {
+      border: none;
+      border-bottom: 1px solid #ff4114;
+    }
+  }
+}
+
+.closeIconBox {
+  width: 16px;
+  height: 16px;
+  margin: 0 0 10px 0;
+}
+
+.closeIconBtn {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+}
+
+.closeIcon {
+  width: 16px !important;
+  height: 16px !important;
+  color: #393644;
+}
