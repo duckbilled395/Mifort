@@ -1,0 +1,46 @@
+.addProfitTarget {
+  width: 280px;
+  margin: 8px auto;
+
+  .inner {
+    width: 170px;
+    height: 37px;
+
+    display: flex;
+    align-items: center;
+
+    .button {
+      width: 170px;
+      height: 15px;
+      background: #231f30;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      padding: 0;
+      border: 0;
+
+      cursor: pointer;
+    }
+
+    .circle {
+      width: 16px;
+      height: 16px;
+      fill: #231f30;
+      background: #0067da;
+      border-radius: 50%;
+    }
+
+    .text {
+      font-family: sans-serif;
+      font-size: 15px;
+      line-height: 14px;
+      letter-spacing: 0.4px;
+      color: #0078FF;
+    }
+  }
+}
+
+
+
